@@ -1,0 +1,16 @@
+.footer {
+   .container {
+      background-color: $colorLightBlue;
+   }
+}
+
+.footer__row {
+   align-items: center;
+   height: 80px;
+   
+}
+
+.footer__text {
+   color: $colorWhite;
+   font-size: 14px;
+}

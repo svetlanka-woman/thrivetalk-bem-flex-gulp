@@ -1,0 +1,108 @@
+.header {
+   position: relative;
+}
+
+.nav {
+   position: absolute;
+   top: 26px;
+   left: 0;
+   right: 0;
+}
+
+.nav__menu {
+   list-style-type: none;
+   padding: 0;
+   margin: 9px 0 0 18px;
+}
+
+.nav__item {
+   margin-right: 12px;
+   a {
+      text-decoration: none;
+      color: $colorBlue;
+      font-size: 14px;
+      padding: 10px 7px;
+      &:hover {
+         border-bottom: 1px solid $colorBlue;
+      }
+   }
+}
+
+.nav__button {
+   font-size: 14px;
+   color: $colorWhite;
+   background-color: $colorLightBlue;
+   border-radius: 25px;
+   margin-right: 1px;
+   &:hover {
+      background-color: #40b7c7;
+   }
+}
+
+.logo__logotip {
+   color: $colorLightBlue;
+   font-size: 24px;
+   margin: 0;
+   letter-spacing: -0.7px;
+}
+
+.nav__row {
+   justify-content: space-between;
+}
+
+.brand {
+   .container {
+      background-color: #F4F9E2;
+   }
+}
+
+.brand__row {
+   margin-right: 0;
+   justify-content: space-between;
+}
+
+.brand__body {
+   color: $colorBlue;
+   padding: 242px 130px 75px 0px;
+   flex: 1 1 304px;
+   // flex: 1 1 496px;
+}
+
+.brand__title {
+   font-size: 48px;
+   margin-top: 29px;
+   line-height: 62px;
+   letter-spacing: -1.6px;
+}
+
+.brand__description {
+   font-size: 24px;
+   line-height: 46px;
+   padding-top: 15px;
+   padding-bottom: 24px;
+}
+
+.brand__button {
+   color: $colorOrange;
+   letter-spacing: 1.5px;
+   padding-left: 1px;
+   margin-right: 26px;
+   &:hover {
+      color: $colorWhite;
+      background-color: $colorOrange;
+   }
+}
+
+.brand__img {
+   background-image: url(../img/brand__img_bg.png);
+   background-repeat: repeat-y;
+   background-size: contain;
+   height: auto;
+   align-self: stretch;
+   flex: 1 1 459px;
+   // flex: 1 1 643px;
+   img {
+      max-width: 100%;
+   }
+}
+
