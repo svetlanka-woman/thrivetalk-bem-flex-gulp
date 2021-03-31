@@ -1,0 +1,49 @@
+.ready {
+   .container {
+      background-color: $colorBlue;
+   }
+}
+
+.ready__row {
+   justify-content: space-between;
+}
+
+.ready__body {
+   color: $colorWhite;
+   padding: 102px 201px 41px 180px;
+}
+
+.ready__link {
+   font-size: 16px;
+   line-height: 12px;
+   letter-spacing: 0.06em;
+   color: $colorWhite;
+   text-decoration: none;
+}
+
+.ready__title {
+   font-size: 64px;
+   line-height: 94px;
+   letter-spacing: -0.01em;
+   margin: 218px 0 44px;
+}
+
+.ready__text {
+   font-size: 36px;
+   line-height: 57px;
+   letter-spacing: -0.005em;
+   margin: 0 0 58px;
+}
+
+.ready__button {
+   color: $colorLightBlue;
+   letter-spacing: 0.1em;
+   width: 180px;
+   margin-left: -22px;
+   &:hover {
+      color: $colorWhite;
+      background-color: $colorLightBlue;
+   }
+}
+
+

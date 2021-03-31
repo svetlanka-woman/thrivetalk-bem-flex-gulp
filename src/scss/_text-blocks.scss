@@ -1,0 +1,29 @@
+.text-blocks__row {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   flex-wrap: wrap;
+   margin-bottom: 40px;
+}
+
+.text-blocks__block {
+   width: 33.33%;
+   height: 240px;
+}
+
+.text-blocks__title {
+   font-size: 28px;
+   line-height: 33px;
+   letter-spacing: -0.03em;
+   color: #22356F;
+   font-weight: normal;
+   margin: 55px 77px 28px 105px;
+}
+
+.text-blocks__text {
+   font-size: 16px;
+   line-height: 27px;
+   letter-spacing: -0.03em;
+   color: rgba(34, 53, 111, 0.5);
+   margin: 0px 77px 37px 105px;
+}

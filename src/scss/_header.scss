@@ -9,6 +9,11 @@
    right: 0;
 }
 
+.nav__row {
+   justify-content: space-between;
+   padding-right: 130px;
+}
+
 .nav__menu {
    list-style-type: none;
    padding: 0;
@@ -39,6 +44,10 @@
    }
 }
 
+.logo {
+   cursor: pointer;
+}
+
 .logo__logotip {
    color: $colorLightBlue;
    font-size: 24px;
@@ -46,9 +55,7 @@
    letter-spacing: -0.7px;
 }
 
-.nav__row {
-   justify-content: space-between;
-}
+
 
 .brand {
    .container {
@@ -57,15 +64,14 @@
 }
 
 .brand__row {
-   margin-right: 0;
+   padding-right: 0;
    justify-content: space-between;
 }
 
 .brand__body {
    color: $colorBlue;
-   padding: 242px 130px 75px 0px;
-   flex: 1 1 304px;
-   // flex: 1 1 496px;
+   padding: 242px 0px 76px 0px;
+   max-width: 38%;
 }
 
 .brand__title {
@@ -99,10 +105,12 @@
    background-size: contain;
    height: auto;
    align-self: stretch;
-   flex: 1 1 459px;
-   // flex: 1 1 643px;
+   max-width: 50.95%;
    img {
       max-width: 100%;
    }
 }
 
+.webp .brand__img {
+   background-image: url(../img/brand__img_bg.webp);
+}

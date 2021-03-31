@@ -31,9 +31,8 @@ body {
   margin: 0 auto;
 }
 
-.row-margin {
-  margin-left: 178px;
-  margin-right: 130px;
+.row-padding {
+  padding-left: 179px;
 }
 
 .row-flex {
@@ -62,13 +61,21 @@ body {
 
 @import '_header.scss';
 
+@import '_why.scss';
+
+@import '_about.scss';
+
+@import '_color-blocks.scss';
+
+@import '_text-blocks.scss';
+
+@import '_you-should.scss';
+
+@import '_ready.scss';
+
+@import '_contacts.scss';
+
 @import '_footer.scss';
-  // main {
-  //   background: url(../img/image2.jpg) 0 0 no-repeat;
-  // }
-  // .webp main {
-  //   background: url(../img/image2.webp) 0 0 no-repeat;
-  // }
-  
+
   
 @import 'helper-classes.scss';

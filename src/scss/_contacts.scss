@@ -1,0 +1,30 @@
+.contacts__body {
+   display: flex;
+   padding: 98px 15px 74px 68px;
+}
+
+.contacts__column {
+   flex: 1 1 33.33%;
+   margin-right: 60px;
+}
+.contacts__title {
+   font-size: 14px;
+   line-height: 11px;
+   letter-spacing: -0.006em;
+   color: $colorBlue;
+   margin: 3px 0 50px 0;
+}
+
+.contacts__text {
+   font-size: 14px;
+   line-height: 25px;
+   letter-spacing: -0.006em;
+   color: rgba(34, 53, 111, 0.5);
+   &:last-child {
+      margin-top: 25px;
+   }
+}
+
+.contacts__email {
+   color: #006DFF;
+}

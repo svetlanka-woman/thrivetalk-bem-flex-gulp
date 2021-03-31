@@ -1,0 +1,92 @@
+.color-blocks__row {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+.color-blocks_big {
+   flex-wrap: wrap;
+   margin-bottom: 22px;
+}
+
+.color-blocks_small {
+   margin-bottom: 120px;
+}
+
+.color-blocks__block_small {
+   width: 360px;
+   height: 360px;
+   font-size: 32px;
+   font-weight: bold;
+   .color-blocks__text {
+      background-image: url(../img/color-blocks__circle-small.png);
+   }
+   &.color-blocks__block-1 {
+      background-color: #FFE2DE;
+   }
+   &.color-blocks__block-2 {
+      background-color: #C4E769;
+   }
+   &.color-blocks__block-3 {
+      background-color: #62D0DF;
+   }
+   &.color-blocks__block-4 {
+      background-color: #0052C1;
+   }
+}
+
+.webp .color-blocks__block_small .color-blocks__text {
+      background-image: url(../img/color-blocks__circle-small.webp);
+}
+
+.color-blocks__block_big {
+   width: 33.33%;
+   height: 480px;
+   font-size: 32px;
+   font-weight: bold;
+   .color-blocks__text {
+      background-image: url(../img/color-blocks__circle-big.png);
+      background-position: 2px 47px;
+      margin: 94px 70px 0 70px;
+      padding: 32px 0 10px 33px;
+   }
+   &.color-blocks__block-1 {
+      background-color: #22356F;
+   }
+   &.color-blocks__block-2 {
+      background-color: #0052C1;
+   }
+   &.color-blocks__block-3 {
+      background-image: url(../img/color-blocks-big_block-3.jpg);
+      background-repeat: no-repeat;
+   }
+   &.color-blocks__block-4 {
+      background-color: #62D0DF;
+   }
+   &.color-blocks__block-5 {
+      background-color: #DEE1FF;
+   }
+   &.color-blocks__block-6 {
+      background-color: #8F00FF;
+   }
+}
+
+.webp .color-blocks__block_big {
+   .color-blocks__text {
+      background-image: url(../img/color-blocks__circle-big.webp);
+   }
+   &.color-blocks__block-3 {
+      background-image: url(../img/color-blocks-big_block-3.webp);
+   }
+}
+
+.color-blocks__text {
+   border-top: 1px solid $colorWhite;
+   color: $colorWhite;
+   background-repeat: no-repeat;
+   background-position: 4px 35px;
+   margin: 70px 54px 0 50px;
+   padding: 25px 0px 13px 28px;
+   line-height: 37px;
+   letter-spacing: -0.006em;
+}

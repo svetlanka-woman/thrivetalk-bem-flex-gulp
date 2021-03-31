@@ -1,0 +1,40 @@
+.you-should__row {
+   justify-content: space-between;
+}
+
+.you-should__body {
+   padding: 103px 175px 38px 106px;
+}
+
+.you-should__title {
+   font-size: 16px;
+   line-height: 12px;
+   letter-spacing: 0.06em;
+   color: $colorBlue;
+   font-weight: normal;
+   margin: 3px 0 0 0;
+}
+
+.you-should__text {
+   font-size: 36px;
+   line-height: 59px;
+   letter-spacing: -0.01em;
+   color: $colorBlue;
+   font-weight: bold;
+   margin: 223px 0 134px;
+}
+
+.you-should__logo {
+   color: $colorLightBlue;
+}
+
+.you-should__button {
+   color: $colorOrange;
+   letter-spacing: 0.1em;
+   width: 180px;
+   margin-left: -22px;
+   &:hover {
+      color: $colorWhite;
+      background-color: $colorOrange;
+   }
+}
