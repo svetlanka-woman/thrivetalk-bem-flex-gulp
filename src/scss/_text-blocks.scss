@@ -1,3 +1,7 @@
+/*======================================================================
+.text-blocks
+=======================================================================*/
+
 .text-blocks__row {
    list-style-type: none;
    margin: 0;
@@ -8,7 +12,8 @@
 
 .text-blocks__block {
    width: 33.33%;
-   height: 240px;
+   padding: 54px 77px 28px 105px;
+   box-sizing: border-box;
 }
 
 .text-blocks__title {
@@ -17,7 +22,7 @@
    letter-spacing: -0.03em;
    color: #22356F;
    font-weight: normal;
-   margin: 55px 77px 28px 105px;
+   margin: 0px 0px 28px 0px;
 }
 
 .text-blocks__text {
@@ -25,5 +30,48 @@
    line-height: 27px;
    letter-spacing: -0.03em;
    color: rgba(34, 53, 111, 0.5);
-   margin: 0px 77px 37px 105px;
+}
+
+/*======================================================================
+@media for .text-blocks
+=======================================================================*/
+
+@media (max-width: 1439.98px) {
+   .text-blocks__block {
+      padding: 54px 70px 20px 70px;
+   }
+   .text-blocks__row {
+      margin-bottom: 50px;
+   }
+}
+
+@media (max-width: 1199.98px) {
+   .text-blocks__block {
+      padding: 54px 56px 10px 56px;
+   }
+}
+
+@media (max-width: 991.98px) {
+   .text-blocks__block {
+      padding: 46px 56px 0px 56px;
+      width: 50%;
+   }
+}
+
+@media (max-width: 767.98px) {
+   .text-blocks__block {
+         padding: 40px 36px 0 40px;
+   }
+   .text-blocks__title {
+      line-height: 26px;
+   }
+}
+
+@media (max-width: 575.98px) {
+   .text-blocks__block {
+      width: 100%;
+   }
+   .text-blocks__title {
+      line-height: 16px;
+   }
 }

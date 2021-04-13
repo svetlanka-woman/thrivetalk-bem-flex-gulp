@@ -1,9 +1,18 @@
+/*======================================================================
+.you-should
+=======================================================================*/
+
 .you-should__row {
    justify-content: space-between;
 }
 
 .you-should__body {
    padding: 103px 175px 38px 106px;
+   .row-flex {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+   }
 }
 
 .you-should__title {
@@ -36,5 +45,77 @@
    &:hover {
       color: $colorWhite;
       background-color: $colorOrange;
+   }
+}
+
+/*======================================================================
+@media for .you-should
+=======================================================================*/
+
+
+@media (max-width: 1439.98px) {
+   .you-should__body {
+      padding: 90px 100px 38px 100px;
+   }
+   .you-should__text {
+      margin: 150px 0 100px;
+   }
+}
+
+@media (max-width: 1199.98px) {
+   .you-should__img {
+      width: 50%;
+      img {
+         width: 100%;
+      }
+   }
+   .you-should__body {
+      width: 50%;
+      padding: 60px 60px 38px 60px;
+   }
+   .you-should__text {
+      font-size: 34px;
+      line-height: 48px;
+      margin: 114px 0 90px;
+   }
+}
+
+@media (max-width: 991.98px) {
+   .you-should__body {
+      width: 60%;
+      padding: 40px 35px 15px 40px;
+   }
+   .you-should__text {
+      font-size: 28px;
+      line-height: 38px;
+      margin: 70px 0 50px;
+   }
+   .you-should__img {
+      width: 47%;
+   }
+}
+
+@media (max-width: 767.98px) {
+   .you-should__row {
+      flex-direction: column;
+   }
+   .you-should__img {
+      width: 100%;
+      img {
+         height: 440px;
+         object-fit: cover;
+      }
+      
+   }
+   .you-should__body {
+      width: 100%;
+      box-sizing: border-box;
+   }
+}
+
+@media (max-width: 575.98px) {
+   
+   .you-should__img img {
+      height: 340px;
    }
 }

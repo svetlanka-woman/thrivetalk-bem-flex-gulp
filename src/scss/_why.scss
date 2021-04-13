@@ -1,3 +1,7 @@
+/*======================================================================
+.why
+=======================================================================*/
+
 .why {
    color: $colorWhite;
    .container {
@@ -35,5 +39,77 @@
    flex: 0 0 525px;
    img {
       max-width: 100%;
+   }
+}
+
+/*======================================================================
+@media for .why
+=======================================================================*/
+
+
+@media (max-width: 1439.98px) {
+   .why__body {
+      padding: 80px 0 0 0;
+   }
+}
+
+@media (max-width: 1199.98px) {
+   .why__img {
+      flex: none;
+      width: 47%;
+      img {
+         max-width: none;
+      }
+   }
+   .why__body {
+      padding: 60px 0 0 0;
+   }
+   .why__question {
+      line-height: 33px;
+      margin-top: 70px;
+   }
+}
+
+@media (max-width: 991.98px) {
+   .why__img {
+      width: 44%;
+   }
+   .why__body {
+      padding: 20px 0 0 0;
+   }
+}
+
+@media (max-width: 767.98px) {
+   .why__row {
+      flex-direction: column;
+      padding-left: 0;
+   }
+   .why__img {
+      width: 100%;
+      img {
+         width: 100%;
+         max-height: 480px;
+         object-fit: cover;
+      }
+   }
+   .why__body {
+      max-width: 100%;
+      padding: 20px 30px 20px 40px;
+   }
+   .why__question {
+      margin-top: 46px;
+   }
+   
+}
+   
+
+@media (max-width: 575.98px) {
+   .why__row {
+      padding-left: 0;
+   }
+   .why__img {
+      img {
+         max-height: 360px;
+      }
    }
 }

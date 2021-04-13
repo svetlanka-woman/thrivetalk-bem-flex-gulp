@@ -1,3 +1,7 @@
+/*======================================================================
+.about
+=======================================================================*/
+
 .about {
    .container {
       background-color: #fff;
@@ -44,3 +48,61 @@
       background-color: $colorLightBlue;
    }
 }
+
+/*======================================================================
+@media for .about
+=======================================================================*/
+
+
+@media (max-width: 1199.98px) {
+   .about__row {
+      margin-top: 100px;
+   }
+   .about__title {
+      margin-left: 100px;
+      width: 270px;
+   }
+   .about__empty {
+      width: 400px;
+   }
+}
+
+@media (max-width: 991.98px) {
+   .about__description {
+      width: 75%;
+      margin-right: 40px;
+   }
+   .about__empty {
+      display: none;
+   }
+   .about__title {
+      margin-left: 40px;
+      width: 25%;
+   }
+}
+
+@media (max-width: 767.98px) {
+   .about__row {
+      margin-top: 70px;
+   }
+}
+
+@media (max-width: 575.98px) {
+   .about__row {
+      flex-direction: column;
+      margin: 50px 40px 0;
+   }
+   .about__description {
+      width: 100%;
+      font-size: 22px;
+   }
+   .about__button {
+      width: 85%;
+      margin: 0px 40px 10px;
+   }
+   .about__title {
+      margin-left: 0px;
+      width: 100%;
+   }
+}
+

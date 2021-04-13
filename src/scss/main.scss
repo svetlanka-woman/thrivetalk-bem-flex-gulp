@@ -59,6 +59,65 @@ body {
   display: flex;
 }
 
+/*======================================================================
+@media for body
+=======================================================================*/
+
+@media (max-width: 1439.98px) {
+  .row-padding {
+    padding-left: 150px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+.row-padding {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 991.98px) {
+.row-padding {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+}
+
+@media (max-width: 575.98px) {
+  .row-padding {
+      padding-left: 30px;
+    }
+  .button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/*
+@media (max-width: 1439.98px) {
+  
+}
+
+@media (max-width: 1199.98px) {
+
+}
+
+@media (max-width: 991.98px) {
+
+}
+
+@media (max-width: 767.98px) {
+
+}
+
+@media (max-width: 575.98px) {
+  
+}
+*/
+
+
 @import '_header.scss';
 
 @import '_why.scss';
@@ -77,5 +136,4 @@ body {
 
 @import '_footer.scss';
 
-  
 @import 'helper-classes.scss';

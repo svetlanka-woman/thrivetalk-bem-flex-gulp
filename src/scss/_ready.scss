@@ -1,3 +1,7 @@
+/*======================================================================
+.ready
+=======================================================================*/
+
 .ready {
    .container {
       background-color: $colorBlue;
@@ -11,6 +15,11 @@
 .ready__body {
    color: $colorWhite;
    padding: 102px 201px 41px 180px;
+   .row-flex {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+   }
 }
 
 .ready__link {
@@ -45,5 +54,95 @@
       background-color: $colorLightBlue;
    }
 }
+
+/*======================================================================
+@media for .ready
+=======================================================================*/
+
+
+@media (max-width: 1439.98px) {
+   .ready__body {
+      padding: 102px 90px 41px 150px;
+   }
+   .ready__text {
+      font-size: 34px;
+      line-height: 54px;
+   }
+   .ready__title {
+      font-size: 60px;
+      line-height: 94px;
+      margin: 116px 0 44px;
+   }
+}
+
+@media (max-width: 1199.98px) {
+   .ready__body {
+      width: 50%;
+      padding: 80px 80px 38px 100px;
+   }
+   .ready__img {
+      width: 45%;
+   }
+   .ready__title {
+      font-size: 48px;
+      line-height: 60px;
+      margin: 110px 0 0px;
+   }
+   .ready__text {
+      font-size: 32px;
+      line-height: 48px;
+   }
+}
+
+@media (max-width: 991.98px) {
+   .ready__body {
+      padding: 80px 30px 38px 40px;
+   }
+   .ready__title {
+      margin: 80px 0 20px;
+   }
+   .ready__img {
+      img {
+         height: 720px;
+      }
+   }
+}
+
+@media (max-width: 767.98px) {
+   .ready__row {
+      flex-direction: column;
+   }
+   .ready__body {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 50px 40px 20px 40px;
+   }
+   .ready__img {
+      width: 100%;
+      img {
+         height: 500px;
+         object-fit: cover;
+         width: 100%;
+      }
+   }
+}
+
+@media (max-width: 575.98px) {
+   .ready__img {
+      img {
+         height: 350px;
+      }
+   }
+   .ready__title {
+      font-size: 44px;
+      line-height: 50px;
+      margin: 80px 0 30px;
+   }
+   .ready__text {
+      font-size: 30px;
+      line-height: 40px;
+  }
+}
+
 
 
