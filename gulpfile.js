@@ -19,7 +19,7 @@ let path = {
       js: source_folder + "/js/_*.js",
       img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
       fonts: source_folder + "/fonts/*.ttf",
-      other_files: "{.gitattributes,.gitignore,.htaccess,404.html,browserconfig.xml,favicon.ico,icon.png,robots.txt,site.webmanifest,tile.png,tile-wide.png}"
+      other_files: "{.htaccess,404.html,browserconfig.xml,favicon.ico,icon.png,site.webmanifest,tile.png,tile-wide.png}"
    }, 
    watch: {
       html: source_folder + "/**/*.html",
@@ -48,9 +48,6 @@ let {src, dest} = require("gulp"),
    ttf2woff = require("gulp-ttf2woff"),
    ttf2woff2 = require("gulp-ttf2woff2"),
    fonter = require("gulp-fonter");
-
-//поддержка старых бразерров при написании JS по новым стандартам 
-//   babel = require('gulp-babel');
 
 //Заупск веб-сервера   
 function browserSync(params){
@@ -102,9 +99,6 @@ function css(){
 function js(){
    return src(path.src.js)
             .pipe(concat('main.js'))
-            // .pipe(babel({      // при написании JS по новым стандартам
-            //    presets: ['@babel/env']
-            // }))
             .pipe(dest(path.build.js))
             .pipe(uglify())
             .pipe(rename({

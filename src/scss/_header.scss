@@ -35,6 +35,9 @@
          border-bottom: 1px solid $colorBlue;
       }
    }
+   &:last-child {
+      display: none;
+   }
 }
 
 .nav__button {
@@ -48,19 +51,8 @@
    }
 }
 
-.nav__bar {
+.nav__burger {
    display: none;
-   width: 40px;
-   height: 40px;
-   background-image: url(../img/nav__bar.png);
-   background-color: transparent;
-   background-repeat: no-repeat;
-   background-size: contain;
-   border: none;
-   cursor: pointer;
-   &:hover {
-      background-image: url(../img/nav__bar-hover.png);
-   }
 }
 
 .logo {
@@ -76,7 +68,7 @@
 
 .brand {
    .container {
-      background-color: #F4F9E2;
+      background-color: $colorYellow;
    }
 }
 
@@ -135,80 +127,186 @@
 ====================================================================== */
 
 @media (max-width: 1439.98px) {
+
    .brand__body {
       padding: 160px 0 50px 0;
       max-width: 45%;
    }
-   
+
    .brand__img {
       max-width: 47%;
    }
 }
 
 @media (max-width: 1199.98px) {
+
    .nav__row {
       padding-right: 100px;
    }
+
    .brand__body {
       padding: 130px 0 50px 0;
       max-width: 45%;
    }
+
    .brand__title {
       font-size: 42px;
       line-height: 56px;
    }
+
    .brand__description {
       font-size: 22px;
       line-height: 40px;
    }
+
    .brand .logo__logotip {
       display: none;
    }
+
    .brand__img {
       max-width: 50%;
    }
 }
 
 @media (max-width: 991.98px) {
-   .nav__menu {
-      display: none;
-   }
-   .nav__button {
-      display: none;
-   }
-   .nav__bar {
-      display: block;
-   }
+
    .nav__row {
       padding-right: 40px;
    }
+
    .brand__body {
       padding: 70px 0 40px 0;
       max-width: 48%;
    }
+
    .brand__title {
       font-size: 35px;
       line-height: 50px;
    }
+
    .brand__img {
       max-width: 48%;
    }
+
    .brand__description {
       line-height: 36px;
+   }
+
+   .nav__button {
+      height: 40px;
+      line-height: 40px;
    }
 }
 
 
 @media (max-width: 767.98px) {
+
+   body.lock {
+      overflow: hidden;
+   }
+
+   .nav__row {
+      padding-right: 30px;
+   }
+
+   .nav__menu {
+      flex-direction: column;
+      position: absolute;
+      top: -353px;
+      right: 0;
+      width: 300px;
+      background-color: $colorYellow;
+      border-left: 1px solid $colorLightBlue;
+      border-bottom: 5px solid $colorLightBlue;
+      border-radius: 0 0 0 40px;
+      padding: 13px 0 10px;
+      transition: all 0.3s ease 0s;
+   }
+
+   .nav__menu.active {
+      top: -35px;
+   }
+
+   .nav__button {
+      display: none;
+   }
+
+   .nav__item {
+      margin: 15px 33px;
+      &:last-child {
+         display: block;
+      }
+      a {
+         color: $colorLightBlue;
+         font-size: 20px;
+         font-weight: bold;
+         padding: 0;
+         display: block;
+         width: 100%;
+         &:hover {
+            border-bottom: none;
+         }
+      }
+   }
+
+   .nav__burger {
+      display: block;
+      position: relative;
+      width: 36px;
+      height: 30px;
+   }
+
+   .nav__burger::before,
+   .nav__burger::after,
+   .nav__burger span {
+      content: '';
+      background-color: $colorLightBlue;
+      position: absolute;
+      width: 100%;
+      height: 6px;
+      border-radius: 10px;
+      right: 0;
+      transition: all 0.2s ease 0s;
+   }
+
+   .nav__burger::before {
+      top: 0;
+   }
+
+   .nav__burger::after {
+      bottom: 0;
+   }
+
+   .nav__burger span {
+      top: 12px;
+      transition: all 0.2s;
+   }
+
+   .nav__burger.active::before {
+      transform: rotate(45deg);
+      top: 12px;
+   }
+
+   .nav__burger.active::after {
+      transform: rotate(-45deg);
+      bottom: 12px;
+   }
+
+   .nav__burger.active span {
+      transform: scale(0)
+   }
+
    .brand__row {
       flex-direction: column-reverse;
       align-items: flex-end;
    }
+
    .brand__body {
       max-width: 100%;
       padding: 0 50px 40px 10px;
       text-align: center;
    }
+
    .brand__img {
       max-width: 80%;
       margin-top: -100px;
@@ -216,17 +314,21 @@
          max-height: 450px;
       }
    }
+
    .brand__title {
       font-size: 32px;
       line-height: 40px;
    }
+
    .brand__description {
       padding-top: 0px;
       padding-bottom: 0px;
    }
+
    .group-btn {
       justify-content: space-around;
    }
+
    .brand__button {
       width: 45%;
       margin-right: 0;
@@ -235,18 +337,23 @@
 
 
 @media (max-width: 575.98px) {
+   
    .brand__img {
       display: none;
    }
+
    .brand__body {
       padding: 70px 30px 40px 0px;
    }
+
    .nav__row {
       padding-right: 30px;
    }
+
    .group-btn {
       flex-direction: column;
    }
+
    .brand__description {
       padding-top: 10px;
       padding-bottom: 10px;

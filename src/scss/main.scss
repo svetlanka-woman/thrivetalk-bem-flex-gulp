@@ -1,5 +1,9 @@
 @import 'base-style.scss';
 
+/* =======================================================================
+Custom styles
+======================================================================= */
+
 @mixin font($font_name, $file_name, $weight, $style) {
   @font-face {
   font-family: $font_name;
@@ -70,19 +74,15 @@ body {
 }
 
 @media (max-width: 1199.98px) {
-.row-padding {
-    padding-left: 100px;
-  }
+  .row-padding {
+      padding-left: 100px;
+  } 
 }
 
 @media (max-width: 991.98px) {
-.row-padding {
-    padding-left: 40px;
+  .row-padding {
+      padding-left: 40px;
   }
-}
-
-@media (max-width: 767.98px) {
-
 }
 
 @media (max-width: 575.98px) {
@@ -94,29 +94,6 @@ body {
     margin-left: 0;
   }
 }
-
-/*
-@media (max-width: 1439.98px) {
-  
-}
-
-@media (max-width: 1199.98px) {
-
-}
-
-@media (max-width: 991.98px) {
-
-}
-
-@media (max-width: 767.98px) {
-
-}
-
-@media (max-width: 575.98px) {
-  
-}
-*/
-
 
 @import '_header.scss';
 

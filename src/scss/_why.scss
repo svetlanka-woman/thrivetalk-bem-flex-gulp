@@ -46,7 +46,6 @@
 @media for .why
 =======================================================================*/
 
-
 @media (max-width: 1439.98px) {
    .why__body {
       padding: 80px 0 0 0;
@@ -61,9 +60,11 @@
          max-width: none;
       }
    }
+   
    .why__body {
       padding: 60px 0 0 0;
    }
+
    .why__question {
       line-height: 33px;
       margin-top: 70px;
@@ -74,6 +75,7 @@
    .why__img {
       width: 44%;
    }
+
    .why__body {
       padding: 20px 0 0 0;
    }
@@ -84,6 +86,7 @@
       flex-direction: column;
       padding-left: 0;
    }
+
    .why__img {
       width: 100%;
       img {
@@ -92,10 +95,12 @@
          object-fit: cover;
       }
    }
+
    .why__body {
       max-width: 100%;
       padding: 20px 30px 20px 40px;
    }
+
    .why__question {
       margin-top: 46px;
    }
@@ -106,7 +111,8 @@
 @media (max-width: 575.98px) {
    .why__row {
       padding-left: 0;
-   }
+   } 
+
    .why__img {
       img {
          max-height: 360px;
