@@ -16,5 +16,5 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          branch: master # The branch the action should deploy to.
+          branch: workflow_deploy # The branch the action should deploy to.
           folder: docs # The folder the action should deploy.
