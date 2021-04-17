@@ -1,4 +1,4 @@
-let project_folder = "docs";
+let project_folder = "dist";
 let source_folder = "src";
 let fonts_style = require('fs');
 
