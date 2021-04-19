@@ -182,7 +182,7 @@ gulp.task('svg_sprite', function() {
 })
 
 // Формирование fonts.scss из имеющихся шрифтов
-function fontsStyle(params) {
+async function fontsStyle(params) {
    let file_content = fonts_style.readFileSync(source_folder + '/scss/fonts.scss');
    if (file_content == '') {
       fonts_style.writeFile(source_folder + '/scss/fonts.scss', '', cb);
