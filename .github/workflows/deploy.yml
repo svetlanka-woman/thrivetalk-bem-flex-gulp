@@ -11,7 +11,7 @@ jobs:
         run: |
           npm install
           npm install gulp --save-dev
-          gulp
+          gulp build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1

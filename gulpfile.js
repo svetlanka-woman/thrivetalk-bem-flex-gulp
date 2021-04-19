@@ -221,16 +221,16 @@ function clean(params){
 
 //Сценарий выполнения функций
 let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, otherFiles));
-//let watch = gulp.parallel(build, watchFiles, browserSync);
+let watch = gulp.parallel(build, watchFiles, browserSync);
 
 //Передача переменных в gulp
 exports.otherFiles = otherFiles;
-//exports.fontsStyle = fontsStyle;
+// exports.fontsStyle = fontsStyle;
 exports.fonts = fonts;
 exports.images = images;
 exports.js = js;
 exports.css = css;
 exports.html = html;
 exports.build = build;
-//exports.watch = watch;
-exports.default = build;
+exports.watch = watch;
+exports.default = watch;
